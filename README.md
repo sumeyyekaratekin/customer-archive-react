@@ -2,7 +2,9 @@
 ## Restful API: [Customer Archive](https://github.com/sumeyyekaratekin/customer-archive "Customer Archive")
 
 [Layers and files](#layers)
+
 [End Points](#endpoints)
+
 [Example out](#exampleout)
 ## Introduction
 `npx create-react-app customer-archive-frontend` :
