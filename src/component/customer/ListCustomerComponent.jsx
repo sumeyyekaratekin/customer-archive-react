@@ -24,24 +24,24 @@ class ListCustomerComponent extends Component {
     });
   }
 
-  deleteCustomer(customerId) {
-    ApiService.deleteCustomer(customerId).then((res) => {
+  deleteCustomer(id) {
+    ApiService.deleteCustomer(id).then((res) => {
       this.setState({ message: "Customer deleted successfully." });
       this.setState({
         customers: this.state.customers.filter(
-          (customer) => customer.id !== customerId
+          (customer) => customer.id !== id
         ),
       });
     });
   }
 
   editCustomer(id) {
-    window.localStorage.setItem("customerId", id);
+    window.localStorage.setItem("id", id);
     this.props.history.push("/edit-customer");
   }
 
   addCustomer() {
-    window.localStorage.removeItem("customerId");
+    window.localStorage.removeItem("id");
     this.props.history.push("/add-customer");
   }
 

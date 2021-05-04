@@ -20,9 +20,9 @@ class EditCustomerComponent extends Component {
     }
 
     loadCustomer() {
-        ApiService.fetchCustomerById(window.localStorage.getItem("customerId"))
+        ApiService.fetchCustomerById(window.localStorage.getItem("id"))
             .then((res) => {
-                let customer = res.data.result;
+                let customer = res.data;
                 this.setState({
                 id: customer.id,
                 name: customer.name,

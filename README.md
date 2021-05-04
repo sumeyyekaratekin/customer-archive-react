@@ -101,5 +101,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ## Example Output
+![output](https://github.com/sumeyyekaratekin/customer-archive-react/blob/main/res/example1.png) 
 
 ![output](https://github.com/sumeyyekaratekin/customer-archive-react/blob/main/res/example.png)
